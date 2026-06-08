@@ -4,10 +4,10 @@
 DEV → PPT (PRETST) → TST → PPR (PREPRD) → PRD
 ```
 
-| Branch       | Real Meaning              |
-| ------------ | ------------------------- |
-| DEV          | Developer Integration     |
-| PPT / PRETST | Technical Pre-Testing     |
-| TST          | Formal QA Testing         |
-| PPR / PREPRD | Staging (Production-like) |
-| PRD          | Production                |
+| Branch       | Real Meaning              | Priority           |
+| ------------ | ------------------------- | ------------------ |
+| DEV          | Developer Integration     | Mandatory          |
+| PPT / PRETST | Technical Pre-Testing     | Optional or Needed |
+| TST          | Formal QA Testing         | Mandatory          |
+| PPR / PREPRD | Staging (Production-like) | Optional or Needed |
+| PRD          | Production                | Mandatory          |
