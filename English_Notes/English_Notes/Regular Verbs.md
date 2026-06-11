@@ -44,3 +44,4 @@
 | regress     | regressed     | regressed       | retroceder (desarrollo)       | The system regressed after the last patch.                            |
 | revert      | reverted      | reverted        | revertir                      | We reverted the configuration to the previous state.                  |
 | vary        | varied        | varied          | variar                        | Performance may vary across environments.                             |
+| wipe        | wiped         | wiped           | limpiar, borrar               | Wipe the desk after the meeting.                                      |

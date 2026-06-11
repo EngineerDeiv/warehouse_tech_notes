@@ -10,4 +10,5 @@
 | Tracker | Seguimiento / rastreador / registro | Noun (tool or record) |
 | Lawful basis | Base jurídica | Legal term |
 | Make the bed | Tender la cama | Common household phrase |
+| stuff | cosas, materiales, IRs | General noun; informal |
 
