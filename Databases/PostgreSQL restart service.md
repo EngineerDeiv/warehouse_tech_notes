@@ -12,13 +12,13 @@ postgres -V
 # stop server PostgreSQL
 
 ```bash
-sudo systemctl stop postgresql-18
+sudo systemctl stop postgresql
 ```
 
 # verify the status of the server PostgreSQL
 
 ```bash
-sudo systemctl status postgresql-18
+sudo systemctl status postgresq
 ```
 
 # restart or start the server PostgreSQL
@@ -26,5 +26,5 @@ sudo systemctl status postgresql-18
 here depends of the version of your database.
 
 ```bash
-sudo systemctl restart postgresql-18
+sudo systemctl restart postgresql
 ```

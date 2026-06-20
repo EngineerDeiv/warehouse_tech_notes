@@ -1,139 +1,106 @@
+# SaaS vs PaaS vs IaaS
 
----
 ### Simple Analogy
 
-- **SaaS:** You use the car.
-    
-- **PaaS:** You drive the car but don't maintain the engine.
-    
-- **IaaS:** You receive the car parts and are responsible for assembling and maintaining much of the vehicle yourself.
-
----
-## PaaS — Platform as a Service
-
-**Platform as a Service (PaaS)** provides a complete application platform where developers can build, deploy, and operate software without managing the underlying infrastructure.
-
-The platform already includes the runtime environment, orchestration, networking, scaling mechanisms, and other operational components required to run applications. Developers primarily focus on writing code, building containers, and deploying workloads.
-
-A common example is a managed Kubernetes platform, where the platform handles cluster operations, container orchestration, networking, and scaling, while applications run inside containers deployed by development teams.
-
----
-### Typical Responsibilities
-
-**Developers**
-
-- Build and maintain application code.
-    
-- Create container images.
-    
-- Deploy applications.
-    
-
-**Platform Engineers**
-
-- Design and maintain the platform.
-    
-- Manage Kubernetes clusters and platform services.
-    
-- Define standards, governance, and self-service capabilities.
-    
-
-**Cloud Engineers**
-
-- Provision the underlying cloud resources.
-    
-- Configure networking, security, and cloud services.
-    
-
-**DevOps Engineers**
-
-- Build CI/CD pipelines.
-    
-- Automate deployments and operational workflows.
-    
-
-### Key Idea
-
-> Focus on the application, not the platform infrastructure.
+- **SaaS:** Use the car.
+- **PaaS:** Drive the car.
+- **IaaS:** Build and maintain the car.
 
 ---
 
-## IaaS — Infrastructure as a Service
+## SaaS (Software as a Service)
 
-**Infrastructure as a Service (IaaS)** provides foundational cloud resources such as virtual machines, storage, networking, and security services.
+You only use the application.
 
-The cloud provider manages the physical infrastructure, but customers remain responsible for the operating system, middleware, runtime, applications, and most configuration tasks.
+Examples:
+- Microsoft 365
+- Gmail
+- Salesforce
 
-This model offers maximum flexibility and control, making it suitable for custom environments and workloads with specific requirements.
+Provider manages:
+- Infrastructure
+- Platform
+- Application
+- Updates
 
-### Typical Responsibilities
+You manage:
+- Users
+- Configuration
 
-**Cloud Engineers**
-
-- Provision virtual machines and cloud resources.
-    
-- Configure networking, security, and storage.
-    
-- Manage operating systems and infrastructure services.
-    
-
-**DevOps Engineers**
-
-- Automate infrastructure deployment.
-    
-- Configure build agents, runners, and deployment environments.
-    
-- Integrate infrastructure with CI/CD pipelines.
-    
-
-### Key Idea
-
-> The provider manages the hardware; you manage everything above the operating system layer.
+**Key Idea:** Just use the software.
 
 ---
 
-## SaaS — Software as a Service
+## PaaS (Platform as a Service)
 
-**Software as a Service (SaaS)** delivers fully managed software accessible through the internet.
+You build and deploy applications.
 
-The provider manages the infrastructure, platform, application, updates, scaling, security, and operational maintenance. Users simply access the application and consume its functionality.
+Examples:
+- Azure App Service
+- OpenShift
+- Google App Engine
 
-Examples include email platforms, collaboration tools, CRM systems, and cloud productivity suites.
+Provider manages:
+- Infrastructure
+- Operating System
+- Runtime
+- Platform services
 
-### Typical Responsibilities
+You manage:
+- Code
+- Containers
+- Deployments
 
-**Business Users**
+**Key Idea:** Focus on the application, not the infrastructure.
 
-- Consume the software.
-    
-- Configure business settings and workflows.
-    
+---
 
-**Engineers**
+## IaaS (Infrastructure as a Service)
 
-- Integrate the application with APIs.
-    
-- Configure identity and access management.
-    
-- Automate workflows and data exchanges.
-    
+You manage servers and operating systems.
 
-### Key Idea
+Examples:
+- Azure Virtual Machines
+- AWS EC2
+- Google Compute Engine
 
-> Simply use the software; the provider manages everything behind the scenes.
+Provider manages:
+- Physical hardware
+- Datacenter
+- Virtualization
+
+You manage:
+- Operating System
+- Applications
+- Security configuration
+- Middleware
+
+**Key Idea:** More control, more responsibility.
+
+---
+
+# Responsibility Summary
+
+| Role | SaaS | PaaS | IaaS |
+|--------|--------|--------|--------|
+| Business User | Use software | N/A | N/A |
+| Developer | Integrations | Code & deployments | Applications |
+| DevOps Engineer | Integrations | CI/CD & automation | CI/CD & infrastructure automation |
+| Platform Engineer | N/A | Platform management | N/A |
+| Cloud Engineer | N/A | Cloud foundation | Infrastructure management |
 
 ---
 
 # Quick Comparison
 
-| Layer              | SaaS     | PaaS     | IaaS     |
-| ------------------ | -------- | -------- | -------- |
-| Applications       | Provider | Customer | Customer |
-| Runtime            | Provider | Provider | Customer |
-| Operating System   | Provider | Provider | Customer |
-| Virtualization     | Provider | Provider | Provider |
-| Servers            | Provider | Provider | Provider |
-| Storage            | Provider | Provider | Provider |
-| Networking         | Provider | Provider | Provider |
-| Customer Control   | Low      | Medium   | High     |
-| Operational Effort | Low      | Medium   | High     |
+| Layer | SaaS | PaaS | IaaS |
+|----------|----------|----------|----------|
+| Application | Provider | Customer | Customer |
+| Runtime | Provider | Provider | Customer |
+| Operating System | Provider | Provider | Customer |
+| Virtualization | Provider | Provider | Provider |
+| Servers | Provider | Provider | Provider |
+| Storage | Provider | Provider | Provider |
+| Networking | Provider | Provider | Provider |
+| Customer Control | Low | Medium | High |
+| Operational Effort | Low | Medium | High |
