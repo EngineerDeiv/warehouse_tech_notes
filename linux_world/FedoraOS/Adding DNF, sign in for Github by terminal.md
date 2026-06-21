@@ -9,5 +9,9 @@ sudo dnf install gh
 3. verified the version of gh
 ~~~
 gh --version
+~~~ 
+4. do login
+~~~
+gh auth login
 ~~~
 
